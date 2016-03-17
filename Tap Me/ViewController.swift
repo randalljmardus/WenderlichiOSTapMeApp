@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +25,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func buttonPressed(sender: UIButton) {
+        count++
+        scoreLabel.text = "Score \n\(count)"
+    }
+    
 
 
 }

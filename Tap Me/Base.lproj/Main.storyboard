@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="height" constant="113" id="DOq-ug-nYx"/>
                                 </constraints>
                                 <state key="normal" title="Tap me!"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfN-sd-hPD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6198196856" green="1" blue="0.02877357665" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,6 +55,10 @@
                             <constraint firstItem="5ed-df-agJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KJ3-2J-X9g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="5ed-df-agJ" id="Hxe-8h-BHx"/>
+                        <outlet property="timerLabel" destination="tpR-Ob-nfD" id="fQf-Gd-kmc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
