@@ -24,7 +24,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
         setupGame()
-    
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg_tile.png")!)
+        scoreLabel.backgroundColor = UIColor(patternImage: UIImage(named: "field_score.png")!)
+        timerLabel.backgroundColor = UIColor(patternImage: UIImage(named: "field_time.png")!)
     }
 
     override func didReceiveMemoryWarning() {
